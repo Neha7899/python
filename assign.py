@@ -10,6 +10,6 @@ print(c)
 d=8
 d/=2
 print(d)
-f=3
-f**=2
-print(f)
+z=3
+z**=2
+print(z)
