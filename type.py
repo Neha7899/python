@@ -1,0 +1,6 @@
+print(type(12.4))
+print(type("cloud camp"))
+print(type(45))
+print(type(True))
+print(type[11,2,"False"])
+print(type(21,2,))
