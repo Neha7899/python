@@ -8,5 +8,5 @@ e=a*b
 print(e)
 f=a/b
 print(f)
-g=a%b
-print(g)
+y=a%b
+print(y)
