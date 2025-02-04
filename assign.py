@@ -1,3 +1,15 @@
 a=5
 a+=5
 print(a)
+b=10
+b-=5
+print(b)
+c=5
+c*=5
+print(c)
+d=8
+d/=2
+print(d)
+f=3
+f**=2
+print(f)
