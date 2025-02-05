@@ -40,7 +40,8 @@ b=a.count(80)
 if(b!=0):
     print("element exists")
 else:
-    print("element does not exists")    
+    print("element does not exists") 
+
 
 
 a=[20,40,50,60,80]
@@ -73,4 +74,11 @@ a=[20,30,40,50,60]
 if(a.count(80)):
     print("element exists") 
 else:
-    print("element does not exists")         
+    print("element does not exists")
+
+
+
+"""single line if-else statement"""
+  
+
+x="True" if (5>2) else "False"
