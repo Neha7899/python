@@ -41,3 +41,59 @@ print(a)
 a={"name":["neha","reddy","a"]}
 a["name"][2]="addula"
 print(a)
+
+
+
+"""deleting an element from a dict"""
+
+#a={"name":"ramesh"}
+#a["name"].pop("ramesh")
+#print(a)
+
+
+"""adding a dict to a dict"""
+
+a={"name":{"adhya",'devansh'}}
+a["id"]={1,2}
+print(a)
+
+
+
+"""get keyword for accessing the values in a key"""
+
+a={"name":{"mamatha","jhansi","pavani"}}
+print(a.get("name"))
+
+
+"""none output if we give a key which is not present in the dict"""
+
+a={"name":{"neha","pavani"}}
+print(a.get("nme"))     #op=none
+
+a={"name":{"neha","pavani"}}
+print(a.get("nme",-1))        #op=-1
+
+
+
+"setdefault operation"
+
+#a={"name":{"neha","pavani","mamatha"},"id":"{1,2,3}"}
+#print(a.setdefault(country",["india","india","india"]))
+#print(a)
+
+
+"""a.keys(),a.values(),a.items"""
+
+a={"x":[1,2,3,4],"y":[5,6,7,8]}
+for ele in a:
+    print(ele)
+
+
+a={"x":[1,2,3,4],"y":[5,6,7,8]}
+for ele in a.values():
+    print(ele) 
+
+
+a={"x":[1,2,3,4],"y":[5,6,7,8]}
+for ele in a.items():
+    print(ele)
