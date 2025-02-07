@@ -43,12 +43,11 @@ a["name"][2]="addula"
 print(a)
 
 
+a={1:1,2:4,3:9}
+b={4:16,5:25,6:36}
+c=a.update(b)
+print(c)
 
-"""deleting an element from a dict"""
-
-#a={"name":"ramesh"}
-#a["name"].pop("ramesh")
-#print(a)
 
 
 """adding a dict to a dict"""
@@ -97,3 +96,43 @@ for ele in a.values():
 a={"x":[1,2,3,4],"y":[5,6,7,8]}
 for ele in a.items():
     print(ele)
+
+
+
+"""deleting """
+
+"""1.popitem()"""
+test={"a":[1,2,3,4],"b":[5,6,7,8]}
+item=test.popitem()                  #deletes the last key-value pair present in the dictionary
+print(test,item)        
+
+
+
+"""2.pop"""
+
+test={"a":[1,2,3,4],"b":[5,6,7,8]}
+item=test.pop("a")                  #deletes the key-value in the dict which is specified by the user
+print(test,item)
+
+
+
+"""3.del"""
+ 
+#test={"a":[1,2,3,4],"b":[5,6,7,8]}
+#item=test.del()
+#print(test,item)
+
+
+"""clear"""
+
+test={"a":[1,2,3,4],"b":[5,6,7,8]}
+item=test.clear()
+print(test,item)
+
+
+
+a={1:1,2:4,3:9}
+b={4:16,5:25,6:36}
+c=a.update(b)
+print(a,c)
+
