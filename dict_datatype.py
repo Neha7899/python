@@ -173,9 +173,13 @@ print(d1,d2)
 
 
 d1={1:1,2:4,3:9}
-d2=d1.copy()
+d2=d1.copy()        #deep copy
 d2[4]=16
 print(d1,d2)
   
 
-
+d1={1:1,2:4,3:9}
+d1=d2
+d2[4]=16
+print("d1:",d1)
+print("d2:",d2)
