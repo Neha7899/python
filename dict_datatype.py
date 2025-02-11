@@ -131,8 +131,51 @@ print(test,item)
 
 
 
+test={1:1,2:4,3:9}
+test.clear
+print(test)
+
+
+""" updating a dictionary """
 a={1:1,2:4,3:9}
 b={4:16,5:25,6:36}
 c=a.update(b)
 print(a,c)
+
+
+
+"""" del """
+
+test={"a":[1,2,3,4],"b":[5,6,7,8]}
+del test["a"]
+print(test)
+
+
+
+
+"""zip()"""
+
+a={1:1,2:4,3:9}
+for x,y in zip(a.keys(),a.values()):
+    print(x,y)
+
+
+a={'name':['neha','minnu','milky'],"id":[1,2,3]}
+for k,v in zip(a.keys(),a.values()):
+    print(k,v)
+
+
+
+"""copy()"""
+d1={1:1,2:4,3:9}
+d2=d1.copy()
+print(d1,d2)
+
+
+d1={1:1,2:4,3:9}
+d2=d1.copy()
+d2[4]=16
+print(d1,d2)
+  
+
 
