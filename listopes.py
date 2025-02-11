@@ -194,3 +194,19 @@ b=[6,7,8,9,10]
 for ele,ele1 in zip(a,b):
     print(ele,ele1)
 
+
+
+"""copy()"""
+
+a=[1,2,3,4,5]
+a=b                 #deep copy
+b[-1]=400
+print(a,b)
+
+
+
+
+a=[1,2,3,4,5]
+b=a.copy()            #shallow copy
+b[-1]=400
+print(a,b)
