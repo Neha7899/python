@@ -210,3 +210,10 @@ a=[1,2,3,4,5]
 b=a.copy()            #shallow copy
 b[-1]=400
 print(a,b)
+
+
+
+a=[1,2,3,4,5]
+print(a[::-1])
+a.reverse()
+print(a)
