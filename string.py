@@ -140,4 +140,64 @@ print(f'{str_search}:',ans)
 
 
 for row in range(5):
-    print("*"*(row+1))
+    print("*"*(row+1))                  #multiplication on strings
+
+
+for row in range(5):
+    for col in range(5):
+        print("*"*(row+1))   
+        break 
+
+
+
+"""5.count"""
+
+a='a,b,c,d,e,f'   
+print(a.count('g'))
+
+
+"""6.replace"""
+
+a="a,b,c,d,e,f"
+a=a.replace("a,b,c","p,q,r")
+print(a) 
+#type:ignore
+
+
+"""islower()"""
+
+a="abcdef"
+print(a.islower())
+
+"""isupper()"""
+
+a="ABCDEF"
+print(a.isupper())
+
+
+a='a,b,s,G,J'
+print(a.isupper())
+print(a.islower())
+
+"""capitalize()"""
+
+s="abcDEf"
+print(s.capitalize())
+
+"""strip()"""
+s="       abc    e        xyz          "
+print(s.strip(),len(s))
+
+
+s="      abc d    efgh"
+print(s.lstrip())
+
+s="          abc e          fgh"
+print(s.rstrip())
+
+
+
+
+a="abcdef"
+s=a.swapcase()
+print(s)
