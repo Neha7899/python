@@ -64,11 +64,80 @@ print(f"the value of a is {sample['a']} and the value of b is {sample['b']}.")
 
 """string methods"""
 
+"""1.split"""
+
 s="python,c++,java,go"
-s_list=s.split(',')
+s_list=s.split(',')           #split
 print(s_list)
 
 
 s="python c++ java g0"
 s_list=s.split()
 print(s_list)
+
+
+s="cloud"
+s_list=list(s)
+print(s_list)
+
+"""2.join"""
+
+s="".join(s_list)           #join
+print(s)
+
+
+
+""""seperate without string methods"""
+
+sample='a b c'
+sep=' '
+res=[]
+for ch in sample:
+    if ch==sep:
+        continue
+    res.append(ch)
+print(res)
+
+
+sample='a b c'
+print(sample.split(" "))
+
+
+"""3.find"""
+
+a="python,java,c++,go"
+print(a.find("c++"))
+
+
+s="pyhton c++ java"
+ans=""
+str_search="c++"
+str_idx=s.find(str_search)
+if str_idx==-1:
+    ans="not found"
+else:
+    ans=str_idx
+print(f"{str_search}:",ans)    
+
+
+"""4.index"""
+
+a="python,java,c++"
+print(a.index("java"))
+print(a.index("j"))
+
+
+s="python,java,c++,go"
+ans=""
+str_search="python"
+if str_search in s:
+    ans=s.index(str_search)
+else:
+    ans="not found"
+print(f'{str_search}:',ans)
+
+
+
+
+for row in range(5):
+    print("*"*(row+1))
