@@ -188,16 +188,23 @@ print(s.capitalize())
 s="       abc    e        xyz          "
 print(s.strip(),len(s))
 
-
+"""lstrip()"""
 s="      abc d    efgh"
 print(s.lstrip())
 
+"""rstrip()"""
 s="          abc e          fgh"
 print(s.rstrip())
 
 
-
+"""swapcase()"""
 
 a="abcdef"
+s=a.swapcase()
+print(s)
+
+
+
+a="ABCDEF"
 s=a.swapcase()
 print(s)
