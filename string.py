@@ -208,3 +208,11 @@ print(s)
 a="ABCDEF"
 s=a.swapcase()
 print(s)
+
+
+s="Neha"
+output=[]
+for char in s:
+    output.append(char.swapcase())
+print(output)
+print("".join(output))
