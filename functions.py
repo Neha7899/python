@@ -1,8 +1,12 @@
+"""takes nothing and returns nothing"""
+
 def add():
     print(2+5)
     print(2+3)
 add()
 
+
+"""takes something and returns nothing"""
 
 def add(a,b):
     print(a+b)
@@ -21,6 +25,7 @@ sub(b=10,a=5)
 sub(a=10,b=5)
 
 
+"""takes something and returns something"""
 
 def add(a,b):
     ans=a+b
@@ -91,47 +96,26 @@ print(res)
 
 
 
+"""takes nothing and returns something"""
+
 def add():
     return 2+3
 res=add()
 print(res)
 
 
-"""variable length arguments"""
 
-def avg(*args):
-    print(type(args))  #type=tuple
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
 
-def avg(*args):
-    print(type(args))       
-    print(args)              #prints the args in a tuple
-    print(*args)             #prints the elements individually
-avg(1,2,3,4,5)
+def cal(f,a,b):
+    return f(a,b)
 
-
-"""write a function that takes two or more input numbers and calculate its average"""
-
-def avg(*args):
-    ans=0
-    for num in args:
-        ans+=num
-        return ans/len(args)
-res=avg(1,2,3,4,5)
-print(res)
-res=avg(1,2,3)
-print(res)
-
-
-def add(a,b,*args):
-    print(a,b,args)
-add(1,2,3,4,5)            #a=1,b=2,*args=(3,4,5)
-
-
-"""keyword arguments (kwargs)"""
-
-def add(a=2,b=3,c=4,*args,*kwargs):
-    print(a+b+c)
-    print(args)
-    print(type(kwargs))
-    print(kwargs)
-add(3,4,5,d=6,e=10)
+ans=cal(add,3,4)
+print(ans)
