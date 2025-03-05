@@ -17,3 +17,7 @@ def fn():
     return a+10,b+2
 print(fn())
 print(b)
+print('hello')
+
+print(locals())
+print(globals())
