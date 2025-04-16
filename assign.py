@@ -13,3 +13,6 @@ print(d)
 z=3
 z**=2
 print(z)
+y=10
+y%=5
+print(y)
