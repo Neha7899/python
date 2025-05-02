@@ -2,18 +2,18 @@
 
 """type of the data"""
 a={"course":"python"}
-print(type(a))
+print(type(a))        #dict
 
 
 """accessing the value using key in dict datatype"""
 
 a={"course":"AIML"}
-print(a["course"])
+print(a["course"])              #AIML
 
 
 """printing a dictionary variable"""
 
-a={"name":["neha","sweety","minnu"],"gender":"female","e-mail":["ababbgmail.com","bababgmail.com"]}
+a={"name":["neha","sweety","minnu"],"gender":"female","e-mail":["ababb@gmail.com","babab@gmail.com"]}
 print(a)
 print(a["name"])
 print(a["gender"])
