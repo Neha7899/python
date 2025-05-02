@@ -104,6 +104,8 @@ res=add()
 print(res)
 
 
+"""passing a function as an argument to another function"""
+
 
 def add(a,b):
     return a+b
