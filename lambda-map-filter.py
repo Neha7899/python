@@ -67,3 +67,9 @@ print(sorted(a))
 
 a=['a','b','c','aab','cab','aa']
 print(sorted(a,key=len))
+
+
+l=list(range(10))
+ans=filter(lambda x:x%2==0,l)
+s=list(ans)
+print(s)
