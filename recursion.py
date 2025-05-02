@@ -65,6 +65,6 @@ def fact(n):
         return 1
     s=n*(n-1)
     return s
-n=int(input("enter a number:"))            #taking the input from the user
+n=int(input("enter a number:"))            #taking the input from the user20
 ans=fact(n)
 print(ans)
